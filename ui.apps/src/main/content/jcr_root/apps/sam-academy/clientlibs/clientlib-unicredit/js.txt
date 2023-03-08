@@ -1,3 +1,4 @@
 
 #base=js
+jquery.js
 header.js

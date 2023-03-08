@@ -15,6 +15,22 @@
                                         <linkurl jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" fieldDescription="Select Link Path" fieldLabel="Link Url" name="./linkUrl"/>
 
                                         <enterlinktext jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldDescription="Enter Link Text" fieldLabel="Enter link text" name="./linkText"/>
+                                      <linktarget
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="select target"
+                                    name="./target">
+                                     <items jcr:primaryType="nt:unstructured">
+                                      <option1
+                                            jcr:primaryType="nt:unstructured"
+                                            text="current tab"
+                                            value="_self" /> 
+                                             <option2
+                                            jcr:primaryType="nt:unstructured"
+                                            text="new tab"
+                                            value="_blank" />
+                                             </items> 
+                                              </linktarget>
                                     </items>
                                 </field>
                             </links>

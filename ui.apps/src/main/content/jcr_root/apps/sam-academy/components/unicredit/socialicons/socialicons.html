@@ -1,7 +1,7 @@
 <sly data-sly-list.continentMultifield="${resource.getChildren}">
   <sly data-sly-test="${continentMultifield.name == 'links'}">
     <sly data-sly-list.link="${continentMultifield.getChildren}">
-      <a href="#">
+      <a  href="${link.linkUrl}" target="${link.target}">
         <span class="${link.iconName}"></span>
       </a>
     </sly>
