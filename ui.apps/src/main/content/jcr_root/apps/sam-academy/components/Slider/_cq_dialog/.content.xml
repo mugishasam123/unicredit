@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Text"
+                        name="./text"/>
+
+                        <Text2 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Text2" name="./text2"/>
+                        <Text3 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Text3" name="./text3"/>
+                        <file jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/fileupload" cq-msm-lockable="/file" fileReferenceParameter="./content/dam/wknd" fieldLabel="image" mimeTypes="[image/png,image/jpeg,application/pdf]" multiple="{Boolean}false" name="./file" sizeLimit="100000000" text="file" uploadUrl="/content/dam/wknd" uploadUrlBuilder=""/>
+                        <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                        <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image2 Asset" uploadUrl="${suffix.path}"/>
+                        <image3 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef3" fileReferenceParameter="./fileReference3" multiple="{Boolean}false" name="./image3" title="Upload Image3 Asset" uploadUrl="${suffix.path}"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

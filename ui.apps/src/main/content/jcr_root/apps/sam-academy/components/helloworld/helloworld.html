@@ -1,0 +1,20 @@
+
+
+
+<body>
+    <h2>multifield</h2>
+    <h2>${resource}</h2>
+   <div data-sly-list.multifield="${resource.getChildren}">
+    <div data-sly-test="${multifield.name=='multiCol'}">
+        <ul data-sly-list.field="${multifield.getChildren}">
+             <li>
+                <h2>${field.linkUrl}</h2>
+                <h2>${field.linkText}</h2>
+             </li>
+        </ul>
+    </div>
+
+   </div>
+</body>
+   
+

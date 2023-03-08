@@ -1,0 +1,14 @@
+
+<head>
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+        data-sly-call="${clientlib.all @categories=['sam-academy.base']}" />
+</head>
+
+<body>
+    <button id="click">click me</button>
+    <div class="details">${properties.text}</div> 
+    <div class="details">${properties.optionsType}</div> 
+    <div class="details">${properties.option2}</div> 
+</body>
+   
+

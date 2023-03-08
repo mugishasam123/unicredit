@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/sam-academy/settings/wcm/templates/(?!xf-).*]"
+        cq:conf="/conf/sam-academy"
+        cq:redirectTarget="/content/sam-academy/us/en"
+        cq:template="/conf/sam-academy/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="sam Sites Project"
+        sling:configRef="/conf/sam-academy"
+        sling:redirect="{Boolean}true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="sam-academy/components/page">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+    <us/>
+</jcr:root>

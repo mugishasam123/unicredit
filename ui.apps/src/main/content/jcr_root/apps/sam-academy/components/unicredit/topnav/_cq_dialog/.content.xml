@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="topnav"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs" maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <linksTab jcr:primaryType="nt:unstructured" jcr:title="navigation links" sling:resourceType="granite/ui/components/coral/foundation/container" margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <links jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/multifield" composite="{Boolean}true" fieldLabel="Links">
+                                <field jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container" name="./links">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <enterlinktext jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldDescription="Enter Link Text" fieldLabel="Enter link text" name="./linkText"/>
+                                                    <linkurl jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" fieldDescription="Select Link Path" fieldLabel="Link Url" name="./linkUrl"/>
+
+                                     <icons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Select an Icon"
+                                    name="./iconName">
+                                    <items jcr:primaryType="nt:unstructured">
+                                    <worldwide
+                                            jcr:primaryType="nt:unstructured"
+                                            text="worldwide"
+                                            value="icon icon-estero2" />
+                                        <calendar
+                                            jcr:primaryType="nt:unstructured"
+                                            text="calendar"
+                                            value="icon icon-calendar" />
+                                        <contactUs
+                                            jcr:primaryType="nt:unstructured"
+                                            text="contact"
+                                            value="icon icon-contattaci2" />
+                                        <search
+                                            jcr:primaryType="nt:unstructured"
+                                            text="search"
+                                            value="icon icon-search" />
+                                          <chat
+                                            jcr:primaryType="nt:unstructured"
+                                            text="chat"
+                                            value="icon icon-chat" />  
+                                           <download
+                                            jcr:primaryType="nt:unstructured"
+                                            text="download"
+                                            value="icon icon-download" />    
+                                        
+                                    </items>
+                                </icons>
+                                    </items>
+                                </field>
+                            </links>
+                        </items>
+                    </linksTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

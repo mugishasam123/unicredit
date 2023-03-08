@@ -1,0 +1,228 @@
+// out: false
+
+/****************************************************
+* Base
+****************************************************/
+
+html {
+  font-family: @unicredit-regular;
+  font-size: 16px;
+  color: @black;
+  word-wrap: break-word;
+  direction: ltr;
+  width: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: white;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  font-display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+  font-display: block;
+  position: relative;
+}
+
+a {
+  color: @black;
+  .transition(all 0.3s ease-in-out);
+  text-decoration: none;
+}
+
+.hashTag{
+  white-space: nowrap;
+}
+// BEGIN NEW STYLE ADDON FROM OLD CSS 03/05/2021
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: @turquoise-blue;
+  outline: 0;
+  text-decoration: none;
+}
+
+header {
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    color: @black;
+  }
+}
+
+.mainTitle {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.mainTitle > p {
+  margin: 0px;
+}
+
+h3.bigTitle,
+h4.mainTitle,
+h5.smallTitle {
+  line-height: 1.42857143;
+}
+
+.bigTitle {
+  border-collapse: collapse;
+  font-family: "unicredit-regular";
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: #666;
+}
+
+h3.bigTitle {
+  margin: 0;
+}
+
+.bigTitle > b {
+  border-collapse: collapse;
+  font-family: "unicredit-bold";
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: #666;
+}
+
+.smallTitle {
+  font-family: "unicredit-regular";
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 0 11px 0;
+  border-collapse: collapse;
+}
+
+.smallTitle > b {
+  font-family: "unicredit-bold";
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 0 11px 0;
+  border-collapse: collapse;
+}
+
+.paragraphTitle,
+.paragraphTitle > b {
+  font-family: "unicredit-bold";
+  font-weight: normal;
+  font-size: 17px;
+  color: #333;
+}
+
+/** Footnote **/
+.ucg_footnote_title,
+.ucg_footnote .ucg_footnote_title,
+.ucg_footnote p,
+.ucg_footnote_title b,
+.ucg_footnote_title strong {
+  font-family: "unicredit-regular";
+  font-size: 12px;
+  color: #999;
+}
+
+.ucg_footnote_title b,
+.ucg_footnote_title strong {
+  font-family: "unicredit-bold";
+  font-weight: normal;
+}
+
+.ucg_footnote p {
+  margin: 0;
+  padding: 0;
+}
+
+// END FIX STYLE FROM OLD
+
+p {
+  margin: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
+  padding-right: 40px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  //For ie
+  align-self: center;
+
+  @media @tablet {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media @mobile {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container-fixed {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1920px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+// blurred elements
+
+.blurred {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+// PRINT
+@media print {
+  .footer,
+  .header,
+  .share-list {
+    display: none !important;
+  }
+}
+
+@media @tablet {
+  .only-dk {
+    display: none;
+  }
+
+  .only-mb {
+    display: block;
+  }
+}
+
+@media @desktop {
+  .only-dk {
+    display: block;
+  }
+
+  .only-mb {
+    display: none;
+  }
+}

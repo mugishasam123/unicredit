@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Social media links"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs" maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <linksTab jcr:primaryType="nt:unstructured" jcr:title="social media links" sling:resourceType="granite/ui/components/coral/foundation/container" margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <links jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/multifield" composite="{Boolean}true" fieldLabel="Social Links">
+                                <field jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container" name="./links">
+                                    <items jcr:primaryType="nt:unstructured">
+                                     <linkurl jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" fieldDescription="Select Link Path" fieldLabel="Link Url" name="./linkUrl"/>
+
+                                     <icons
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Select an Icon"
+                                    name="./iconName">
+                                    <items jcr:primaryType="nt:unstructured">
+                                    <twitter
+                                            jcr:primaryType="nt:unstructured"
+                                            text="twitter"
+                                            value="icon-twitter" />
+                                        <linkedin
+                                            jcr:primaryType="nt:unstructured"
+                                            text="linkedin"
+                                            value="icon-linkedin" />
+                                        <youtube
+                                            jcr:primaryType="nt:unstructured"
+                                            text="youtube"
+                                            value="icon-youtube" />   
+                                            <instagram
+                                            jcr:primaryType="nt:unstructured"
+                                            text="instagram"
+                                            value="icon-instagram" /> 
+                                            <facebook
+                                            jcr:primaryType="nt:unstructured"
+                                            text="facebook"
+                                            value="icon-facebook" /> 
+                                    </items>
+                                </icons>
+                                    </items>
+                                </field>
+                            </links>
+                        </items>
+                    </linksTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

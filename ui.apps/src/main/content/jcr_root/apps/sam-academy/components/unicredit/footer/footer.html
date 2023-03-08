@@ -1,0 +1,39 @@
+<footer class="footer ucg-icons__newPackage">
+  <div class="footer__wrap container">
+    <div class="footer__upper">
+      <div
+        class="footer__mainLink"
+        data-sly-resource="${ 'footermainlinks' @ resourceType='sam-academy/components/unicredit/footermainlinks' }"
+      ></div>
+
+      <div
+        class="footer__lastLink"
+        data-sly-resource="${ 'footerlastlinks' @ resourceType='sam-academy/components/unicredit/footerlastlinks' }"
+      ></div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__col">
+        <sly
+          data-sly-resource="${ 'footerlogo' @ resourceType='sam-academy/components/unicredit/footerlogo' }"
+        ></sly>
+        <div
+          class="footer__copy"
+          data-sly-resource="${ 'copyright' @ resourceType='sam-academy/components/unicredit/copyright' }"
+        ></div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__socials">
+          <sly
+          data-sly-resource="${ 'socialicons' @ resourceType='sam-academy/components/unicredit/socialicons' }"
+        ></sly>
+        </div>
+
+        <div class="footer__utils">
+          <sly
+            data-sly-resource="${ 'footerutils' @ resourceType='sam-academy/components/unicredit/footerutils' }"
+          ></sly>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

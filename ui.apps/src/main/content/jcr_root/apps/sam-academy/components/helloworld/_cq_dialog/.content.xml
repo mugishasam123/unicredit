@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured" jcr:title="List Collection" sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+
+        <items jcr:primaryType="nt:unstructured">
+
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs" maximized="{Boolean}true">
+
+                <items jcr:primaryType="nt:unstructured">
+
+                    <Basic jcr:primaryType="nt:unstructured" jcr:title="multifield" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns" margin="{Boolean}true">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+
+                                <items jcr:primaryType="nt:unstructured">
+
+                                    <multifieldcollection jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/multifield" composite="{Boolean}true" fieldDescription="Click + to add a new page" fieldLabel="Multifield collection" name="./multiCol">
+
+                                        <field jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container" name="./items1">
+
+                                            <items jcr:primaryType="nt:unstructured">
+
+                                                <linkurl jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" fieldDescription="Select Link Path" fieldLabel="Link Url" name="./linkUrl"/>
+
+                                                <enterlinktext jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldDescription="Enter Link Text" fieldLabel="Enter link text" name="./linkText"/>
+
+                                            </items>
+
+                                        </field>
+
+                                    </multifieldcollection>
+
+                                
+                                </items>
+
+                            </column>
+
+
+                        </items>
+
+                    </Basic>
+                    <tab2 jcr:primaryType="nt:unstructured" jcr:title="dropdown"   sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <text jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Text" name="./text"/>
+                                    <dropdown jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" class="cq-dialog-dropdown-showhide" cq-dialog-dropdown-showhide-target=".test-options-showhide-target" fieldLabel="Options Type" name="./optionsType">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <option1 jcr:primaryType="nt:unstructured" text="Option1" value="option1"/>
+                                            <option2 jcr:primaryType="nt:unstructured" text="Option2" value="option2"/>
+                                        </items>
+                                    </dropdown>
+                                    <option1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target" showhidetargetvalue="option1">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <text jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/textfield" fieldLabel="Options 1 Group"/>
+
+                                        </items>
+                                    </option1group>
+                                    <option2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target foundation-layout-util-vmargin" showhidetargetvalue="option2">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <text jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/textfield" fieldLabel="Options 2 Group"/>
+                                        </items>
+                                    </option2group>
+                                </items>
+                            </column>
+                        </items>
+                    </tab2>
+
+                </items>
+
+            </tabs>
+
+        </items>
+
+    </content>
+
+</jcr:root>
