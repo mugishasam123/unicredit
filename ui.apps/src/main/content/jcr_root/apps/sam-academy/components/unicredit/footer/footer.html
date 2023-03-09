@@ -2,37 +2,36 @@
   <div class="footer__wrap container">
     <div class="footer__upper">
       <div
-        class="footer__mainLink"
         data-sly-resource="${ 'footermainlinks' @ resourceType='sam-academy/components/unicredit/footermainlinks' }"
+        data-sly-unwrap="${WCMMODE.DISABLED}"
       ></div>
 
       <div
-        class="footer__lastLink"
         data-sly-resource="${ 'footerlastlinks' @ resourceType='sam-academy/components/unicredit/footerlastlinks' }"
+        data-sly-unwrap="${WCMMODE.DISABLED}"
       ></div>
     </div>
     <div class="footer__bottom">
       <div class="footer__col">
-        <sly
-          data-sly-resource="${ 'footerlogo' @ resourceType='sam-academy/components/unicredit/footerlogo' }"
-        ></sly>
         <div
-          class="footer__copy"
+          data-sly-resource="${ 'footerlogo' @ resourceType='sam-academy/components/unicredit/footerlogo' }"
+          data-sly-unwrap="${WCMMODE.DISABLED}"
+        ></div>
+        <div
           data-sly-resource="${ 'copyright' @ resourceType='sam-academy/components/unicredit/copyright' }"
+          data-sly-unwrap="${WCMMODE.DISABLED}"
         ></div>
       </div>
       <div class="footer__col">
-        <div class="footer__socials">
-          <sly
+        <div
           data-sly-resource="${ 'socialicons' @ resourceType='sam-academy/components/unicredit/socialicons' }"
-        ></sly>
-        </div>
+          data-sly-unwrap="${WCMMODE.DISABLED}"
+        ></div>
 
-        <div class="footer__utils">
-          <sly
-            data-sly-resource="${ 'footerutils' @ resourceType='sam-academy/components/unicredit/footerutils' }"
-          ></sly>
-        </div>
+        <div
+          data-sly-resource="${ 'footerutils' @ resourceType='sam-academy/components/unicredit/footerutils' }"
+          data-sly-unwrap="${WCMMODE.DISABLED}"
+        ></div>
       </div>
     </div>
   </div>

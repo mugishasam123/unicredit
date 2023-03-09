@@ -1,10 +1,12 @@
 <sly data-sly-use.menuobj="it.codeland.sam.core.models.TestModel">
   <sly data-sly-list.listObj="${menuobj.menuList}">
-          <sly data-sly-list.childPageDetails="${listObj.childPages}">
-              <div data-nav-1="${childPageDetails.pageName}" class="first-level__item ${childPageDetails.pageName}" href="#">
-                <span class="item__text text--label">${childPageDetails.pageTitle}</span>
-                <span class="icon icon-forth"></span>
-              </div>
-          <sly>
+    <div
+      data-nav-1="${listObj.pageName}"
+      class="first-level__item ${listObj.pageName}"
+      href="#"
+    >
+      <span class="item__text text--label">${listObj.pageTitle}</span>
+      <span class="icon icon-forth"></span>
+    </div>
   </sly>
 </sly>

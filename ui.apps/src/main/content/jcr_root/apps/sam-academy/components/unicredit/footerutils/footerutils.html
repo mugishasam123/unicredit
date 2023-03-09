@@ -1,9 +1,12 @@
-<sly data-sly-list.continentMultifield="${resource.getChildren}">
-  <sly data-sly-test="${continentMultifield.name == 'links'}">
-    <sly data-sly-list.link="${continentMultifield.getChildren}">
-      <a href="${link.linkUrl}" target="${link.target}" data-sly-test="${link.linkText}">
-        ${link.linkText}
-      </a>
+<div class="footer__utils">
+  <sly data-sly-list.continentMultifield="${resource.getChildren}">
+    <sly data-sly-test="${continentMultifield.name == 'links'}">
+      <sly data-sly-list.link="${continentMultifield.getChildren}">
+        <a href="${link.linkUrl}" target="${link.target}" data-sly-test="${link.linkText}">
+          ${link.linkText}
+        </a>
+      </sly>
     </sly>
   </sly>
-</sly>
+</div>
+

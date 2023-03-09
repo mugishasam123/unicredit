@@ -1,22 +1,19 @@
 <sly data-sly-use.menuobj="it.codeland.sam.core.models.TestModel">
   <sly data-sly-list.listObj="${menuobj.menuList}">
-      <ul>
-          <sly data-sly-list.childPageDetails="${listObj.childPages}">
-              <div class="second-level__items ${childPageDetails.pageName}" data-nav-2="${childPageDetails.pageName}">
-                <div class="container">
-                  <a
-                    class="second-level__item--title text--paragraph-title"
-                    href="#"
-                  >
-                  ${childPageDetails.pageTitle}
-                  </a>
-                  <sly data-sly-list.childPageDetail="${childPageDetails.childPages}">
-                  <a class="second-level__item text--body" href="#">${childPageDetail.pageTitle}</a>
-                  <sly>
-                </div>
-              </div>
-          <sly>
-      </ul>
+    <div
+      class="second-level__items ${listObj.pageName}"
+      data-nav-2="${listObj.pageName}"
+    >
+      <div class="container">
+        <a class="second-level__item--title text--paragraph-title" href="#">
+          ${listObj.pageTitle}
+        </a>
+        <sly data-sly-list.childPageDetail="${listObj.childPages}">
+          <a class="second-level__item text--body" href="#"
+            >${childPageDetail.pageTitle}</a
+          >
+        </sly>
+      </div>
+    </div>
   </sly>
 </sly>
-

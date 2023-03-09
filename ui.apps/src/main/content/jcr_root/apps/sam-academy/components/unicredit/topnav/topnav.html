@@ -1,16 +1,18 @@
-<sly data-sly-list.continentMultifield="${resource.getChildren}">
-  <sly data-sly-test="${continentMultifield.name == 'links'}">
-    <sly data-sly-list.link="${continentMultifield.getChildren}">
-      <a target="${link.target}"  href="${link.Url}" class="navbar__link search">
-        <div class="${link.iconName}"></div>
-        <p
-        
-          class="search__text text--label"
-          data-sly-test="${link.linkText}"
+<div class="navbar__links">
+  <sly data-sly-list.continentMultifield="${resource.getChildren}">
+    <sly data-sly-test="${continentMultifield.name == 'links'}">
+      <sly data-sly-list.link="${continentMultifield.getChildren}">
+        <a
+          target="${link.target}"
+          href="${link.Url}"
+          class="navbar__link search"
         >
-          ${link.linkText}
-        </p>
-      </a>
+          <div class="${link.iconName}"></div>
+          <p class="search__text text--label" data-sly-test="${link.linkText}">
+            ${link.linkText}
+          </p>
+        </a>
+      </sly>
     </sly>
   </sly>
-</sly>
+</div>

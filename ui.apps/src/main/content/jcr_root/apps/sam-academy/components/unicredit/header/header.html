@@ -7,11 +7,10 @@
           alt="unicredit-logo"
         />
       </a>
-      <div class="navbar__links">
-        <sly
+      <div
         data-sly-resource="${ 'topnav' @ resourceType='sam-academy/components/unicredit/topnav' }"
-      ></sly>
-      </div>
+        data-sly-unwrap="${WCMMODE.DISABLED}"
+      ></div>
       <a class="navbar__entry-point" href="#">
         <div class="icon icon-online-Banking_A"></div>
         <div class="entry-point__text text--label">ONLINE BANKING</div>
@@ -64,8 +63,8 @@
         </div>
         <div class="navbar__second-level">
           <sly
-          data-sly-resource="${ 'hiddennav' @ resourceType='sam-academy/components/unicredit/hiddennav' }"
-        ></sly>
+            data-sly-resource="${ 'hiddennav' @ resourceType='sam-academy/components/unicredit/hiddennav' }"
+          ></sly>
         </div>
       </div>
     </div>
