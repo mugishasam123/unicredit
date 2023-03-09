@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="en"   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+<html
+  lang="en"
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unicredit</title>
-    <sly data-sly-call="${clientLib.css @ categories='sam-academy.unicredit'}" data-sly-unwrap/>
-   
+    <sly
+      data-sly-call="${clientLib.css @ categories='sam-academy.unicredit'}"
+      data-sly-unwrap
+    />
   </head>
   <body>
     <div
       data-sly-resource="${ 'header' @ resourceType='sam-academy/components/unicredit/header' }"
+      data-sly-unwrap="${wcmmode.disabled}"
     ></div>
-    <div  >
-<sly data-sly-resource="${ 'parsys' @ resourceType='wcm/foundation/components/parsys' }"></sly>
-    </div>
+    <div
+      data-sly-resource="${ 'parsys' @ resourceType='wcm/foundation/components/parsys' }"
+      data-sly-unwrap="${wcmmode.disabled}"
+    ></div>
 
     <div
       data-sly-resource="${ 'footer' @ resourceType='sam-academy/components/unicredit/footer' }"
+      data-sly-unwrap="${wcmmode.disabled}"
     ></div>
-    <sly data-sly-call="${clientLib.js @ categories='sam-academy.unicredit'}" data-sly-unwrap/>
+    <sly
+      data-sly-call="${clientLib.js @ categories='sam-academy.unicredit'}"
+      data-sly-unwrap
+    />
   </body>
 </html>
